@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devices-width">
+        <meta name="web designer" content="Jagrati Jain">
+        <link rel="stylesheet" href="miniproject.css">
+    </head>
+    <body>
+        <h1>REGISTRATION FORM</h1>
+        <form id="survey-form">
+            <div class="row">
+                <div class="label">
+                    <label>First Name :</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="First Name" class="First-name" placeholder="First Name" required="*" autofocus>
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>Last Name :</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="Last Name" class="Last-name" placeholder="Last Name" required="*">
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>Gender :</label>
+                </div>
+                <div class="input">
+                    <select class="select" required="*">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>Age :</label>
+                </div>
+                <div class="input">
+                    <input type="number" name="Age" class="Age" placeholder="Age" required="*">
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>Email :</label>
+                </div>
+                <div class="input">
+                    <input type="email" name="Email Id" class="Email" placeholder="Email" required="*">
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>Phone :</label>
+                </div>
+                <div class="input">
+                    <input type="number" name="Area Code" class="Area-Code" placeholder="Area Code" required="*">
+                    <input type="number" name="Phone Number" class="Phone-no" placeholder="Phone Number" required="*">
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>Country :</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="Country" class="Country" placeholder="Country" required="*">
+                    <input type="text" name="State" class="State" placeholder="State" required="*">
+                    <input type="text" name="City" class="City" placeholder="City" required="*">
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>Which position best describe your current role?</label>
+                </div>
+                <div class="input">
+                    <input type="radio" name="Which position best describe your current role?" value="student">
+                <label class="container">Student
+                <span class="checkmark"></span> 
+                </label>
+                 <input type="radio" name="Which position best describe your current role?" value="Professor">
+                <label class="container">Professor
+                <span class="checkmark"></span> 
+                </label>
+                 <input type="radio" name="Which position best describe your current role?" value="Enterpreneur">
+                <label class="container">Enterpreneur
+                <span class="checkmark"></span> 
+                </label>
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>How likely you will recommend this to your friend?</label>
+                </div>
+                <div class="input">
+                    <input type="radio" name="How likely you will recommend this to your friend?" value="definitely">
+                <label class="container">Definitely
+                <span class="checkmark"></span> 
+                </label>
+                 <input type="radio" name="How likely you will recommend this to your friend?" value="Maybe">
+                <label class="container">Maybe
+                <span class="checkmark"></span> 
+                </label>
+                 <input type="radio" name="How likely you will recommend this to your friend?" value="Not Sure">
+                <label class="container">Not Sure
+                <span class="checkmark"></span> 
+                </label>
+                </div>
+                <br><br>
+                <div class="label">
+                    <label>Which career option you will choose in your future?</label>
+                </div>
+                <div class="input" id="space">
+                <input type="checkbox" id="project" name="Front End Developer" value="Front End Developer">
+                <label for="Front End">Front End Developer</label><br>
+                <input type="checkbox" id="project" name="" value="Back End Developer">
+                <label for="Back End Developer">Back End Developer</label><br>
+                <input type="checkbox" id="project" name="Full Stack Developer" value="Full Stack Developer">
+                <label for="Full Stack Developer">Full Stack Developer</label><br><br>
+                </div>
+                <div>
+                    <input type="button" value="Submit" class="Submit" onclick="register()">
+                    <input type="button" value="Reset" class="Reset">
+               </div>
+            </div>
+        </form>
+        <script>
+            function register(){
+                var name=document.getElementsByClassName(First-name).value;
+                var email=document.getElementsByClassName(Email).value;
+                var phnnumber=document.getElementsByClassName(Phone-no).value;
+                var number = /^[0-9]+$/;
+                var letters = /^[A-Za-z]+$/;
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-a-zA-Z0-9\-])+\.)+([a-a-a-zA-Z0-9]{2,4})+$/;
+
+                if(name==''){
+                    alert('Please enter your first namme');
+                }
+                else if(!letters.test(name)){
+                    alert('Name field required only alphabet!');
+                }
+                else if(email==''){
+                    alert("Please enter your email");
+                }
+                else if(filter.test(email)){
+                    alert('Invalid email');
+                }
+                else if(phnnumber=''){
+                    alert('Please enter your phone number');
+                }
+                else if(!number.test(phnnumber)){
+                    alert('Phn number required only number');
+                }
+
+            }
+        </script>
+    </body>
+</html>

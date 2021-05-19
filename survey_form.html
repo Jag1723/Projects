@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devices-width">
+	<link rel="stylesheet" type="text/css" href="survey.css">
+	<link rel="stylesheet" href="http://stackpath.bootstrapcdn.confront-awesome/4.7.0/css/">
+</head>
+<body>
+	<h1>SURVEY FORM</h1>
+	<form id="survey-form">
+		<div class="row-tab">
+			<div class="lable-burger">
+				<label>First Name :</label>
+			</div>
+			<div class="input-burger">
+				<input type="text" name="First name" class="First-name" placeholder="First Name" required="*" autofocus>
+			</div>
+
+			<div class="lable-burger">
+				<label>Last Name :</label>
+			</div>
+			<div class="input-burger">
+				<input type="text" name="Last name" class="Last-name" placeholder="Last Name">
+			</div>
+            
+            <div class="lable-burger">
+                <label>Gender :</label>
+            </div>
+            <div class="input-burger" >
+				<select class="select-sc">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+            
+            <div class="lable-burger">
+               <label>mobile number :</label> 
+            </div>
+			<div class="input-burger">
+				<input type="number" name="mobile" class="mobile" placeholder="mobile number" required="*">
+			</div>
+
+			<div class="lable-burger">
+				<label>E-mail :</label>
+			</div>
+			<div class="input-burger">
+				<input type="Email" name="E-mail" class="E-mail" placeholder="E-mail" required="*">
+			</div>
+
+			<div class="lable-burger">
+				<label>Age :</label>
+			</div>
+			<div class="input-burger">
+				<input type="number" name="Age" class="Age" placeholder="Age" required="*">
+			</div>
+            
+            <div class="lable-burger">
+				<label>city :</label>
+			</div>
+			<div class="input-burger">
+				<input type="text" name="city" class="city" placeholder="city" required="*">
+			</div>
+            
+            <div class="lable-burger">
+				<label>State:</label>
+			</div>
+			<div class="input-burger">
+				<input type="text" name="state" class="state" placeholder="state" required="*">
+			</div>
+            
+            <div class="lable-burger">
+				<label>country :</label>
+			</div>
+			<div class="input-burger">
+				<input type="text" name="coumtry" class="country" placeholder="country" required="*">
+			</div>
+
+			<div class="lable-burger" >
+				<label id='space'>Which option best describes your current role? :</label>
+			</div>
+			<div class="input-burger" >
+				<select class="select-sc">
+					<option value="Student">Student</option>
+					<option value="Professor">Professor</option>
+					<option value="Trainer">Trainer</option>
+				</select>
+			</div>
+            
+            <div class="lable-burger">
+              <label>How likely is that you would recommend a friend?</label>  
+            </div>
+            <div class="input-burger">
+                <input type="radio" checked="checked" name="radio">
+                <label class="container">Definitely
+                <span class="checkmark"></span> 
+                </label>
+                 <input type="radio" checked="checked" name="radio">
+                <label class="container">Maybe
+                <span class="checkmark"></span> 
+                </label>
+                 <input type="radio" checked="checked" name="radio">
+                <label class="container">Not Sure
+                <span class="checkmark"></span> 
+                </label>
+            </div>
+            
+            <div class="lable-burger" id="select-cs">
+             <label>What do you like most in this intership?</label>   
+            </div>
+            <div class="input-burger">
+                <select class="select-sc">
+                    <option value="teaching">Teaching</option>
+                    <option value="Project work">Project</option>
+                    <option value="Mentor">Mentor</option>
+                </select>
+            </div>
+            
+            <div class="lable-burger">
+              <label>Things that should be improved in the future:</label>  
+            </div>
+            <div class="input-burger" id="space" >
+           
+                <input type="checkbox" id="project" name="Frontnd" value="front-end project">
+                <label for="Font-end"> Font-end project</label><br>
+                <input type="checkbox" id="project" name="Back-end" value="Back-end project">
+                <label for="project"> Back-end project</label><br>
+                <input type="checkbox" id="project" name="data" value="data visualization">
+                <label for="project"> Data visualization</label><br><br>
+            </div> 
+            
+            <div>
+                 <input type="button" value="Submit" class="Submit">
+            </div>
+		</div>
+	</form>
+</body>
+</html>
