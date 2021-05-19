@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                width : 300px;
+                height: 150px;
+                margin: 80px;
+                background-color: lightcoral;
+                border: mediumvioletred;
+                transform: translate(40px,80px);
+            }
+            div#normal{
+                width : 300px;
+                height: 150px;
+                margin: 50px;
+                background-color: lightcoral;
+                border: mediumvioletred;
+            }
+            div#myDiv{
+                margin: 50px;
+                -ms-transform: rotate(25deg);
+                transform: rotate(25deg);
+            }
+            div#scale{
+                transform: scale(1.5,1.5);
+            }
+            div#scalex{
+                transform: scaleX(0.7);
+            }
+            div#scaley{
+                transform: scaleY(0.9);
+            }
+            div#skew{
+                transform: skew(30deg,20deg);
+            }
+            div#skewx{
+                transform: skewX(30deg);
+            }
+            div#skewy{
+                transform: skewY(30deg);
+            }
+            div#matrix{
+                transform: matrix(1, -0.3, 0, 1, 0, 0);
+            }
+        </style>
+    </head>
+    <body style="background-color: lightblue; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <h1>The translate() method</h1>
+        <div>
+            The div is moved 40 pixels to the right, and 80 pixels down from its current position..
+        </div><br><br><br><br>
+
+        <h1>The rotate() method</h1>
+        
+        <div id="normal">This is normal div.</div>
+        
+        <div id = "myDiv">This div is rotated div.</div><br><br>
+
+        <h1>The Scale() method</h1>
+
+        <div id="scale">This div element is 1.5 times of its original width, and 1.5 times of its original height.</div><br>
+
+        <h1>The ScaleX() method</h1>
+        <div id="scalex">Scale x element</div>
+
+        <h1>The ScaleY() method</h1>
+        <div id="scaley">Scale y element</div>
+
+        <h1>The Skew() method</h1>
+        <div id="skew">Skew element</div>
+
+        <h1>The SkewX() method</h1>
+        <div id="skewx">Skew x element</div>
+
+        <h1>The SkewY() method</h1>
+        <div id="skewy">Skew y element</div>
+
+        <h1>The matrix() method</h1>
+        <div id="matrix">Matrix element</div>
+    </body>
+</html>
